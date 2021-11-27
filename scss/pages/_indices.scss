@@ -1,0 +1,385 @@
+
+.indices__screen {
+	&::after {
+		background: url(../img/indices.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}
+.indices-text {
+	max-width: 802px;
+	margin: 0 auto 100px;
+    @media only screen and (max-width: $laptop-m) {
+        margin-bottom: 60px;
+    }
+    @media only screen and (max-width: $table-m) {
+        margin-bottom: 30px;
+    }
+}
+.indices-title.section-title {
+	margin-bottom: 0;
+}
+.indices-content__section {
+	padding-top: 120px;
+    @media only screen and (max-width: $laptop-m) {
+        padding-top: 80px;
+    }
+    @media only screen and (max-width: $laptop-s) {
+        padding-top: 60px;
+    }
+    @media only screen and (max-width: $mobile) {
+        padding-top: 40px;
+    }
+}
+.indices__table {
+	padding-top: 120px;
+    @media only screen and (max-width: $laptop-m) {
+        padding-top: 80px;
+    }
+    @media only screen and (max-width: $laptop-s) {
+        padding-top: 60px;
+    }
+    @media only screen and (max-width: $table-m) {
+        padding-top: 40px;
+    }
+}
+
+
+.selects__row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	>div {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 19%;
+		flex: 0 0 19%;
+        @media only screen and (max-width: $laptop-s) {
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 30%;
+			flex: 0 0 30%;
+			margin-right: 3%;
+			margin-bottom: 20px;
+        }
+        @media only screen and (max-width: $table-s) {
+            -webkit-box-flex: 0;
+			-ms-flex: 0 0 47%;
+			flex: 0 0 47%;
+        }
+	}
+    @media only screen and (max-width: $laptop-s) {
+        -ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: unset;
+		-ms-flex-pack: unset;
+		justify-content: unset;
+		margin-right: -3%;
+    }
+}
+.custom-select.ss-main {
+	.ss-single-selected {
+		height: 40px;
+		padding: 6px 15px;
+        @media only screen and (max-width: $mobile) {
+            height: 30px;
+			padding: 3px 10px;
+        }
+	}
+}
+.select-title {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.table-tools {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-top: 70px;
+    @media only screen and (max-width: $laptop-s) {
+        margin-top: 20px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+    }
+}
+.table-tabs {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 55%;
+	flex: 0 0 55%;
+}
+.table-tab {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 33.333333%;
+	flex: 0 0 33.333333%;
+	font-weight: bold;
+	height: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-align: center;
+	background: #F2F2F2;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	color: $black;
+	cursor: pointer;
+	text-transform: uppercase;
+	&:hover {
+		background: $green;
+		color: #fff;
+	}
+    @media only screen and (max-width: $mobile) {
+        font-size: 10px;
+		line-height: 16px;
+		height: 30px;
+    }
+}
+.table-tab.active {
+	background: $green;
+	color: #fff;
+}
+.table-filter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 33%;
+	flex: 0 0 33%;
+    @media only screen and (max-width: $desk) {
+        -webkit-box-flex: 0;
+		-ms-flex: 0 0 40%;
+		flex: 0 0 40%;
+    }
+    @media only screen and (max-width: $laptop-s) {
+        margin-top: 30px;
+		-webkit-box-pack: unset;
+		-ms-flex-pack: unset;
+		justify-content: unset;
+    }
+    @media only screen and (max-width: $mobile) {
+        -webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: unset;
+		-ms-flex-align: unset;
+		align-items: unset;
+    }
+}
+.table-search {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	label {
+		display: block;
+		margin-right: 20px;
+        @media only screen and (max-width: $mobile) {
+            margin-right: 10px;
+			font-size: 10px;
+        }
+	}
+}
+.search-input {
+	border: 2px solid #E2E2E2;
+	height: 40px;
+	width: 304px;
+	position: relative;
+	span {
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		color: #E2E2E2;
+        @media only screen and (max-width: $mobile) {
+            top: calc(50% + 1px);
+        }
+	}
+	input {
+		padding: 0 20px 0 50px;
+		border: none;
+		width: 100%;
+		height: 100%;
+		outline: none;
+	}
+    @media only screen and (max-width: $mobile) {
+        width: unset;
+		height: 30px;
+    }
+}
+.table-main {
+	margin-top: 30px;
+}
+.table-head {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background-color: #F2F2F2;
+	i {
+		margin-right: 10px;
+		color: #626262;
+        @media only screen and (max-width: $laptop-s) {
+            margin-right: 6px;
+        }
+        @media only screen and (max-width: $table-s) {
+            margin-right: 3px;
+        }
+	}
+    @media only screen and (max-width: $table-m) {
+        display: none;
+    }
+}
+.hd {
+	font-weight: bold;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 16.66666%;
+	flex: 0 0 16.66666%;
+	padding: 0 10px;
+	height: 70px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-transform: uppercase;
+	&:first-child {
+		padding-left: 30px;
+        @media only screen and (max-width: $table-m) {
+            padding-left: 10px;
+			padding-left: 0;
+        }
+	}
+}
+.td {
+	&:first-child {
+		padding-left: 30px;
+        @media only screen and (max-width: $table-m) {
+            padding-left: 10px;
+			padding-left: 0;
+        }
+		.td-inner {
+			color: $green;
+		}
+	}
+	font-weight: 500;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 16.66666%;
+	flex: 0 0 16.66666%;
+	height: 70px;
+	padding: 0 10px;
+    @media only screen and (max-width: $table-m) {
+        -webkit-box-flex: unset;
+		-ms-flex: unset;
+		flex: unset;
+		height: 40px;
+		padding: 0;
+    }
+    >div {
+        @media only screen and (max-width: $table-m) {
+            height: 100%;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			padding: 0 20px;
+        }
+    }
+}
+.m-hd {
+	display: none;
+	font-weight: bold;
+	text-transform: uppercase;
+    @media only screen and (max-width: $table-m) {
+        display: block;
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		background: #F2F2F2;
+    }
+}
+.tr {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	&:nth-child(even) {
+		background: #FCFCFC;
+	}
+    &:not(:last-child) {
+        @media only screen and (max-width: $table-m) {
+            margin-bottom: 30px;
+        }
+    }
+    @media only screen and (max-width: $table-m) {
+        -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		padding: 0;
+    }
+}
+.table-btn {
+	margin: 50px auto 0;
+    @media only screen and (max-width: $table-m) {
+        margin-top: 30px;
+    }
+}
+.m-table {
+    + {
+        .table-btn {
+            @media only screen and (max-width: $mobile) {
+                margin-left: auto;
+            }
+        }
+    }
+}
+.table-sort {
+    @media only screen and (max-width: $laptop-s) {
+        margin-right: 20px;
+    }
+    @media only screen and (max-width: $mobile) {
+        width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		margin-bottom: 15px;
+    }
+}

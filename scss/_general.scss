@@ -1,0 +1,509 @@
+/* --------------------------------------------------------
+version: 1.0
+author: Asryan Babken
+email: ababken10@gamail.com
+website: https://freelancehunt.com/freelancer/ababken.html
+----------------------------------------------------------*/
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+li::marker {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+a,
+button,
+textarea,
+input {
+    outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+.no-boot ul {
+    list-style: none;
+    margin: 0;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+html {
+    overflow-x: hidden;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* overall */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-style: 16px;
+    line-height: 24px;
+    background: #fff;
+    overflow-x: hidden;
+    color: $black;
+    @media only screen and (max-width: $laptop-m) {
+        font-size: 14px;
+		line-height: 23px;
+    }
+    @media only screen and (max-width: $laptop-s) {
+        font-size: 12px;
+		line-height: 16px;
+    }
+}
+
+.h-container {
+    max-width: 1640px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+    @media only screen and (max-width: $desk) {
+        max-width: 1440px;
+    }
+    @media only screen and (max-width: $laptop) {
+        max-width: 1240px;
+    }
+    @media only screen and (max-width: $mobile) {
+        padding: 0 15px;
+    }
+}
+
+.container {
+    max-width: 1258px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+    @media only screen and (max-width: $mobile) {
+        padding: 0 15px;
+    }
+}
+
+.main__screen {
+    color: #fff;
+    position: relative;
+}
+
+
+
+.main__screen::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-default {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 19px;
+    text-transform: uppercase;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    @media only screen and (max-width: $laptop-m) {
+        padding: 10px 15px;
+    }
+    @media only screen and (max-width: $laptop-s) {
+        padding: 10px 10px;
+    }
+}
+
+.btn-outline {
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+
+
+.md-screen__title {
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 594px;
+    margin: 30px 0;
+    @media only screen and (max-width: $laptop-s) {
+        font-size: 30px;
+		line-height: 40px;
+		margin: 20px 0;
+    }
+    @media only screen and (max-width: $mobile-s) {
+        font-size: 24px;
+		line-height: 30px;
+		margin: 15px 0;
+    }
+}
+
+.screen__title {
+    font-size: 60px;
+    line-height: 70px;
+    max-width: 802px;
+    margin-bottom: 50px;
+    @media only screen and (max-width: $laptop) {
+        font-size: 50px;
+		line-height: 60px;
+		max-width: 602px;
+		margin-bottom: 40px;
+    }
+    @media only screen and (max-width: $laptop-m) {
+        font-size: 40px;
+		line-height: 50px;
+		max-width: 502px;
+		margin-bottom: 35px;
+    }
+    @media only screen and (max-width: $mobile) {
+        font-size: 30px;
+		line-height: 40px;
+    }
+    @media only screen and (max-width: $mobile-s) {
+        font-size: 28px;
+		line-height: 35px;
+    }
+}
+
+.location-title {
+    text-transform: uppercase;
+}
+
+.screen__title span,
+.md-screen__title span {
+    color: #E5EEC1;
+}
+
+.section__screen {
+    position: relative;
+}
+
+.screen-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    @media only screen and (max-width: $laptop-s) {
+        font-size: 16px;
+		line-height: 20px;
+    }
+    @media only screen and (max-width: $mobile-s) {
+        font-size: 14px;
+		line-height: 18px;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.s-container {
+    max-width: 832px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.screen__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.overflowed {
+	overflow: hidden;
+}
+.g-screen {
+	height: 631px;
+    @media only screen and (max-width: $laptop) {
+		height: 550px;
+    }
+    @media only screen and (max-width: $mobile) {
+        height: 650px;
+    }
+}
+
+
+.section-title {
+	font-size: 40px;
+	line-height: 50px;
+	margin-bottom: 50px;
+	span {
+		color: $green;
+	}
+    @media only screen and (max-width: $laptop) {
+        font-size: 30px;
+		line-height: 40px;
+		margin-bottom: 40px;
+    }
+    @media only screen and (max-width: $mobile) {
+        margin-bottom: 25px;
+		font-size: 22px;
+		line-height: 28px;
+		margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: $table) {
+    .quality-title {
+		padding: 40px 0;
+		.section-title {
+			margin-bottom: 0;
+		}
+	}
+    .fcfqm__screen.default-frame {
+		padding-bottom: 0;
+	}    
+	.btn-contacts {
+		display: none;
+	}
+
+}
+
+.m-container {
+    @media only screen and (max-width: $laptop-s) {
+        padding: 0 20px;
+    }
+    @media only screen and (max-width: $mobile) {
+        padding: 0 15px;
+    }
+}
+
+.half-bg-left {
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		height: 100%;
+		background: #F2F2F2;
+		z-index: -10;
+        @media only screen and (max-width: $mobile) {
+            display: none;
+        }
+	}
+}
+.half-bg-right {
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30%;
+		height: 100%;
+		background: #F2F2F2;
+		z-index: -10;
+        @media only screen and (max-width: $mobile) {
+            display: none;
+        }
+	}
+}
+.fw-m {
+	font-weight: 500;
+}
+.fsz-md {
+	font-size: 20px;
+	line-height: 24px;
+    @media only screen and (max-width: $laptop-m) {
+        font-size: 16px;
+		line-height: 20px;
+    }
+    @media only screen and (max-width: $mobile) {
+        font-size: 14px;
+		line-height: 18px;
+    }
+}
+.c-black {
+	color: #000;
+}
+.c-white {
+	color: #fff;
+}
+.c-green {
+	color: $green;
+}
+.c-gray {
+	color: rgba(255, 255, 255, .6);
+}
+.btn-green {
+	background: $green;
+	color: #fff;
+}
+.home-btn {
+	margin-top: 30px;
+    @media only screen and (max-width: $laptop) {
+        margin-top: 20px;
+    }
+}
+.fund-screen {
+	padding: 60px 0;
+	background: $green;
+    @media only screen and (max-width: $laptop-s) {
+        padding: 40px 0;
+    }
+}
+.fund-title {
+	color: #fff;
+	margin-bottom: 21px;
+}
+.fund-btn {
+	color: #fff;
+	margin: 0 auto;
+}
+.default-frame {
+	padding: 120px 0;
+    @media only screen and (max-width: $laptop-s) {
+        padding: 80px 0;
+    }
+    @media only screen and (max-width: $mobile) {
+        padding: 40px 0;
+    }
+}
+
+.logo {
+    svg {
+        @media only screen and (max-width: $laptop-m) {
+            width: 120px;
+            height: auto;
+        }
+    }
+}

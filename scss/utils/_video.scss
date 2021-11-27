@@ -1,0 +1,50 @@
+
+
+.video__frame {
+	margin-bottom: 120px;
+	hr {
+		background: #9F9F9F;
+		height: 1px;
+	}
+    @media only screen and (max-width: $laptop) {
+        margin-bottom: 80px;
+    }
+    @media only screen and (max-width: $mobile) {
+        margin-bottom: 40px;
+    }
+}
+.video__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.video__block {
+	video {
+		max-width: 100%;
+	}
+	position: relative;
+    @media only screen and (max-width: $laptop) {
+        max-width: 980px;
+		margin-right: auto;
+		margin-left: auto;
+    }
+}
+video[poster] {
+	height: 100%;
+	max-height: 600px;
+}
+.video-btn {
+	position: absolute;
+	bottom: 10%;
+	right: 5%;
+	color: #DBDBDB;
+	z-index: 10;
+	cursor: pointer;
+	font-size: 80px;
+    @media only screen and (max-width: $table-s) {
+        font-size: 30px;
+    }
+}

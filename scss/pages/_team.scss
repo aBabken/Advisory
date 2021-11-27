@@ -1,0 +1,131 @@
+
+.team__screen {
+	&::after {
+		background: url(../img/team.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}
+.team__frame {
+	padding-top: 120px;
+	overflow-x: hidden;
+    @media only screen and (max-width: $laptop-s) {
+        padding-top: 80px;
+    }
+    @media only screen and (max-width: $table) {
+        padding-top: 60px;
+    }
+    .team__item {
+        @media only screen and (max-width: $table-s) {
+            -webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+        }
+    }
+    
+}
+.team__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	&:nth-child(even) {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+		.team-content {
+			&::after {
+				right: 0;
+				left: unset;
+			}
+		}
+	}
+	&:not(:last-child) {
+		margin-bottom: 120px;
+        @media only screen and (max-width: $laptop-m) {
+            margin-bottom: 80px;
+        }
+        @media only screen and (max-width: $table) {
+            margin-bottom: 50px;
+        }
+        @media only screen and (max-width: $table-s) {
+            margin-bottom: 30px;
+        }
+	}
+    @media only screen and (max-width: $table-s) {
+        padding-bottom: 30px;
+		border-bottom: 1px solid #9F9F9F;
+    }
+}
+.team-image {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 32%;
+	flex: 0 0 32%;
+	img {
+		width: 100%;
+	}
+}
+.team-content {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 58%;
+	flex: 0 0 58%;
+	padding-top: 50px;
+	position: relative;
+	&::after {
+		content: "";
+		width: 100vw;
+		top: 0;
+		left: 0;
+		height: 1px;
+		background: #9F9F9F;
+		position: absolute;
+        @media only screen and (max-width: $table-s) {
+            display: none;
+        }
+	}
+    @media only screen and (max-width: $laptop-m) {
+        -webkit-box-flex: 0;
+		-ms-flex: 0 0 63%;
+		flex: 0 0 63%;
+		padding-top: 40px;
+    }
+    @media only screen and (max-width: $laptop-s) {
+        -webkit-box-flex: 0;
+		-ms-flex: 0 0 65%;
+		flex: 0 0 65%;
+		padding-top: 25px;
+    }
+}
+.team-position {
+	color: $green;
+	text-transform: uppercase;
+}
+.team-title.section-title {
+	margin-bottom: 10px;
+    @media only screen and (max-width: $laptop-s) {
+        margin-bottom: 3px;
+    }
+}
+.team-text {
+	margin-top: 50px;
+	font-weight: 500;
+	p {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+            @media only screen and (max-width: $table) {
+                margin-bottom: 10px;
+            }
+		}
+	}
+    @media only screen and (max-width: $laptop-m) {
+        margin-top: 40px;
+    }
+    @media only screen and (max-width: $laptop-s) {
+        margin-top: 25px;
+    }
+}

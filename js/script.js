@@ -100,7 +100,7 @@ $(document).ready(function () {
   // });
 
 
-  $(".btn-contacts, .cross, .layer-out").click(function (e) {
+  $(".table-btn, .cross, .layer-out").click(function (e) {
     e.preventDefault();
     $(".layer").fadeToggle();
   });
